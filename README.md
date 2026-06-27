@@ -71,17 +71,10 @@ deep-research-report.md
 
 ### Quick install from GitHub
 
-After publishing the repo, users can install with a single command:
+Install with a single command:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/aamanku/emot-llm/main/scripts/install.sh | bash
-```
-
-Until the final GitHub owner is known, pass the repo URL explicitly:
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/aamanku/emot-llm/main/scripts/install.sh \
-  | bash -s -- --repo https://github.com/aamanku/emot-llm.git
 ```
 
 Installer knobs:
