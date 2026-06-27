@@ -6,8 +6,7 @@
     <td valign="top">
       <h1>emot-llm</h1>
       <p><strong>Behavior-tree based, physiology-inspired emotional dynamics simulator for LLM agents.</strong></p>
-      <p><code>emot-llm</code> wraps an LLM backend with a transparent, fictional affect-regulation layer. It uses <code>py_trees</code> to tick through input collection, LLM appraisal, optional webcam vision, dynamical emotional-state updates, memory recall/daydreaming, response generation, logging, and behavior-tree visualization. Its conversational role/persona starts as unknown and should develop only from explicit user framing, stable memory, and simulated state.</p>
-      <p><strong>Important:</strong> This project does <strong>not</strong> give an LLM real emotions, consciousness, suffering, or sentience. It simulates normalized latent variables inspired by emotion physiology and uses them to condition response policy.</p>
+      <p><code>emot-llm</code> wraps an LLM backend with a transparent, fictional affect-regulation layer. It uses <code>py_trees</code> to tick through input collection, LLM appraisal, optional webcam vision, dynamical emotional-state updates, memory recall/daydreaming, response generation, logging, and behavior-tree visualization. Its conversational role/persona starts as unknown or from presets and should develop only from explicit user framing, stable memory, and simulated state.</p>
     </td>
   </tr>
 </table>
