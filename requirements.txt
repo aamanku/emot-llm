@@ -1,0 +1,11 @@
+py_trees
+ollama
+openai
+opencv-python
+numpy
+pydantic
+typer
+rich
+python-dotenv
+google-genai
+pytest

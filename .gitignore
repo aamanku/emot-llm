@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# Local config/secrets
+.env
+.env.*
+
+# Runtime/session artifacts
+logs/
+frames/
+*.jsonl
+memory.jsonl
+memory_summary.md
+*.dot

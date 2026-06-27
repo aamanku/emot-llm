@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "emot-llm"
+version = "0.1.0"
+description = "Behavior-tree based physiology-inspired emotional simulator for LLMs"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "emot-llm contributors" },
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "py_trees",
+  "numpy",
+  "pydantic",
+  "typer",
+  "rich",
+  "python-dotenv",
+]
+
+[project.optional-dependencies]
+ollama = ["ollama"]
+openai = ["openai"]
+openrouter = ["openai"]
+gemini = ["google-genai"]
+webcam = ["opencv-python"]
+dev = [
+  "pytest",
+  "ollama",
+  "openai",
+  "google-genai",
+  "opencv-python",
+]
+all = [
+  "ollama",
+  "openai",
+  "google-genai",
+  "opencv-python",
+]
+
+[project.scripts]
+emot-llm = "emot_llm.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+emot_llm = ["personalities/*.md"]
